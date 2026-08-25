@@ -1,0 +1,38 @@
+{
+  "name": "genpark-chain-of-thought-deliberative-reasoning-verifier-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Deliberative chain-of-thought reasoning verifier with hidden self-correction tokens, search backtracking, and formal soundness validation.",
+  "author": "genpark",
+  "category": "deep-reasoning",
+  "tags": [
+    "chain-of-thought",
+    "deliberative-reasoning",
+    "o1-architecture",
+    "soundness-verifier",
+    "openai-o1"
+  ],
+  "inputs": {
+    "problem_statement": {
+      "type": "string"
+    },
+    "search_budget_tokens": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "deliberation_session_id": {
+      "type": "string"
+    },
+    "intermediate_verification_steps_count": {
+      "type": "integer"
+    },
+    "formal_mathematical_soundness_score_pct": {
+      "type": "number"
+    },
+    "final_concise_solution_verified": {
+      "type": "boolean"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
